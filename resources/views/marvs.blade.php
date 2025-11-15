@@ -1,223 +1,88 @@
-<!-- Unique Redesigned Portfolio (Dark Neon Cyber Theme) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvi Torero | Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <style>
-        :root {
-            --primary: #00eaff;
-            --secondary: #0ef;
-            --dark: #0a0f1a;
-            --card: rgba(255, 255, 255, 0.05);
-            --glow: 0 0 15px rgba(0, 238, 255, 0.7);
-        }
-
-        body {
-            background: var(--dark);
-            font-family: 'Poppins', sans-serif;
-            color: #fff;
-            overflow-x: hidden;
-        }
-
-        /* NAVBAR */
-        .navbar-custom {
-            background: rgba(10, 15, 26, 0.9);
-            backdrop-filter: blur(20px);
-            padding: 1rem 0;
-        }
-        .nav-link {
-            color: #cce7ff !important;
-            margin: 0 10px;
-        }
-        .nav-link:hover {
-            color: var(--primary) !important;
-            text-shadow: var(--glow);
-        }
-
-        /* HERO */
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            padding-left: 5%;
-            background: linear-gradient(135deg, #07101d, #03080f);
-        }
-        .hero-text h1 {
-            font-size: 3.8rem;
-            font-weight: 700;
-            color: var(--secondary);
-            text-shadow: var(--glow);
-        }
-        .hero-text p {
-            width: 75%;
-            font-size: 1.2rem;
-            color: #cce7ff;
-        }
-
-        .pfp {
-            width: 340px;
-            height: 340px;
-            border-radius: 50%;
-            border: 4px solid var(--secondary);
-            box-shadow: var(--glow);
-            object-fit: cover;
-        }
-
-        /* SECTION TITLES */
-        .section-title {
-            text-align: center;
-            font-size: 2.6rem;
-            margin-bottom: 40px;
-            color: var(--secondary);
-            text-shadow: var(--glow);
-        }
-
-        /* ABOUT */
-        .about-box {
-            background: var(--card);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: var(--glow);
-        }
-
-        /* SKILLS */
-        .skill-card {
-            background: var(--card);
-            border-radius: 15px;
-            padding: 25px;
-            text-align: center;
-            transition: 0.3s;
-            box-shadow: var(--glow);
-        }
-        .skill-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 0 25px #00eaff;
-        }
-        .skill-card i {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            color: var(--primary);
-        }
-
-        /* PROJECTS */
-        .project-card {
-            background: var(--card);
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: var(--glow);
-            transition: 0.3s;
-        }
-        .project-card:hover {
-            transform: scale(1.03);
-            box-shadow: 0 0 25px var(--secondary);
-        }
-        .project-card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 20px;
-            border-top: 1px solid #123;
-            margin-top: 50px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+@vite(['resources/css/design.css', 'resources/js/app.js'])
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" style="color: var(--secondary);">Marvi T.</a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-                <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
-        <div class="hero-text">
-            <h1>Marvi James Torero</h1>
-            <p>Laravel Developer • Web Designer • Programmer — I build modern, functional, and responsive systems with clean UI and optimized performance.</p>
-        </div>
-        <div class="ms-auto me-5">
-            <img src="https://via.placeholder.com/350" class="pfp">
-        </div>
-    </section>
+<!-- Navigation -->
+<div class="nav-wrapper">
+  <div class="nav-inner">
+    <a href="/" class="brand">
+      <span class="brand-name">Marvi James Torero</span>
+      <span class="brand-role">Student</span>
+    </a>
+    <div class="nav-links">
+      <a href="/resume" class="nav-circle resume-btn">Resume</a>
+      <a href="/projects" class="nav-circle projects-btn">Projects</a>
+      <a href="/contact" class="nav-circle contact-btn">Contact</a>
+    </div>
+  </div>
+</div>
 
-    <!-- ABOUT -->
-    <section id="about" class="container py-5">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-box">
-            <p class="fs-5">I am a passionate web developer specializing in <strong>Laravel</strong>, <strong>PHP</strong>, and modern UI/UX. I love building systems that solve real-world problems — including my Barangay Document Management System (BDMS) project. My focus is clean code, smooth UI, and creating tools people actually enjoy using.</p>
-        </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="container py-5">
-        <h2 class="section-title">Skills</h2>
-        <div class="row g-4">
-            <div class="col-md-3"><div class="skill-card"><i class="fas fa-code"></i><h5>Frontend</h5><p>HTML, CSS, Tailwind, JS</p></div></div>
-            <div class="col-md-3"><div class="skill-card"><i class="fas fa-server"></i><h5>Backend</h5><p>PHP, Laravel, MySQL</p></div></div>
-            <div class="col-md-3"><div class="skill-card"><i class="fas fa-toolbox"></i><h5>Tools</h5><p>Git, Composer, VS Code</p></div></div>
-            <div class="col-md-3"><div class="skill-card"><i class="fas fa-bolt"></i><h5>Other</h5><p>API, UI Design, Debugging</p></div></div>
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-inner">
+    <!-- large circular profile on the left -->
+    <div class="hero-left">
+      <div class="pfp-wrap">
+        <div class="pfp-wrap css-ring">
+          <img class="pfp" src="/me.jpg" alt="Profile photo of Marvi James Torero">
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="container py-5">
-        <h2 class="section-title">Projects</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x200">
-                    <div class="p-3"><h5>BDMS System</h5><p>Laravel-based document request and management system.</p></div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x200">
-                    <div class="p-3"><h5>Portfolio Website</h5><p>Modern UI portfolio made with Laravel Blade.</p></div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/400x200">
-                    <div class="p-3"><h5>Attendance Tracker</h5><p>Simple CRUD-based attendance monitoring system.</p></div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- greeting + short about + circular CTAs -->
+    <div class="hero-right">
+      <h1 style="font-size:clamp(4.2rem,8vw,6.4rem);margin:0 0 0.6rem 0;">Hello</h1>
+      <h3 style="margin-top:0.4rem;color:var(--text);font-weight:700">A Bit about me</h3>
+      <p class="hero-sub">I'm Marvi, a passionate student developer with a focus on front-end web experiences, UI design, and accessible interfaces. I enjoy learning new technologies and turning ideas into working products with attention to performance, accessibility, and visual polish.</p>
 
-    <!-- CONTACT -->
-    <section id="contact" class="container py-5">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="text-center">
-            <p class="fs-5">Email: <strong>marvitorero@example.com</strong></p>
-            <p>Facebook • GitHub • LinkedIn</p>
-        </div>
-    </section>
+      <div style="display:flex;gap:28px;align-items:center;justify-content:flex-start;margin-top:28px;flex-wrap:wrap">
+        <a href="/resume" class="nav-circle" style="width:120px;height:120px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg, #22c1c3, #1a9a9d);color:#fff;font-weight:800;font-size:1.05rem;box-shadow:0 12px 30px rgba(34,193,195,0.2);">Resume</a>
+        <a href="/projects" class="nav-circle" style="width:120px;height:120px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg, #ff7ab6, #ff5d9f);color:#fff;font-weight:800;font-size:1.05rem;box-shadow:0 12px 30px rgba(255,122,182,0.2);">Projects</a>
+        <a href="/contact" class="nav-circle" style="width:120px;height:120px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg, #7c5cff, #6b4ceb);color:#fff;font-weight:800;font-size:1.05rem;box-shadow:0 12px 30px rgba(124,92,255,0.2);">Contact</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2025 Marvi Torero. All Rights Reserved.</p>
-    </footer>
+
+
+
+<footer class="site-footer grid-footer">
+  <div class="footer-grid">
+    <div class="footer-col footer-left">
+      <h5>Phone</h5>
+      <div class="footer-item"><a>123-456-7890</a></div>
+    </div>
+
+    <div class="footer-col footer-center">
+      <h5>Email</h5>
+      <div class="footer-item"><a href="mailto:info@mysite.com">info@mysite.com</a></div>
+    </div>
+
+    <div class="footer-col footer-follow">
+      <h5>Follow Me</h5>
+      <div class="footer-item socials">
+        <a class="social" href="https://www.instagram.com/yipee404_/" aria-label="Instagram">in</a>
+        <a class="social" href="https://x.com/mrvjmstrr12" aria-label="Twitter">𝕏</a>
+      </div>
+    </div>
+
+    <div class="footer-col footer-copyright-col">
+      <div class="footer-copyright">
+        <div>© 2025 By Marvi James Torero</div>
+        <div class="footer-meta">Powered and secured by <a href="#" class="footer-meta-link">Web</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
