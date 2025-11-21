@@ -34,5 +34,5 @@ Route::post('login', [AuthController::class, 'login'])->name('login');
 
 Route::get('dashboard', function() {
     return view('dashboard');
-})->middleware('dashboard')->name('dashboard');
+})->middleware('auth')->name('dashboard');
 

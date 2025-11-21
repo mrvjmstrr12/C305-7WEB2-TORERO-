@@ -1,5 +1,5 @@
 @include('components.header')
-    @if (session->any())
+    @if ($errors->any())
         <div style="color:red">
             @foreach ($errors->all() as $error)
                 <p>{{ $error }}</p>
