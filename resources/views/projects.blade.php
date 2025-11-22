@@ -60,7 +60,7 @@
 <!-- NAV -->
 <div class="nav-wrapper" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
-    <a href="/" class="brand" aria-label="Home">
+    <a href="/home" class="brand" aria-label="Home">
       <span class="brand-name">Marvi James Torero</span>
       <span class="brand-role">Student</span>
     </a>

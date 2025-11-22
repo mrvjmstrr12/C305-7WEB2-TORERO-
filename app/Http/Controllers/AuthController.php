@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Hash;
 class AuthController extends Controller
 {
     function showRegister() { return view('authentication.register');}
+
     function register(Request $request)
     {
         $request->validate([
@@ -21,11 +22,13 @@ class AuthController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            
         ]);
         return redirect()->route('login.form')->with('success', 'Registration Successful!');
     }
 
     function showLogin() { return view('authentication.login'); }
+
     function login(Request $request)
     {
         $credentials = $request->validate([

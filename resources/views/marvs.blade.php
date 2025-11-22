@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-@vite(['resources/css/design.css', 'resources/js/app.js'])
-</head>
-<body>
-
-<!-- Navigation -->
-<div class="nav-wrapper">
-  <div class="nav-inner">
-    <a href="/" class="brand">
-      <span class="brand-name">Marvi James Torero</span>
-      <span class="brand-role">Student</span>
-    </a>
-    <div class="nav-links">
-      <a href="/resume" class="nav-circle resume-btn">Resume</a>
-      <a href="/projects" class="nav-circle projects-btn">Projects</a>
-      <a href="/contact" class="nav-circle contact-btn">Contact</a>
-    </div>
-  </div>
-</div>
-
+@include('components.header')
 
 <!-- Hero -->
 <section class="hero">
@@ -52,37 +27,4 @@
   </div>
 </section>
 
-
-
-
-<footer class="site-footer grid-footer">
-  <div class="footer-grid">
-    <div class="footer-col footer-left">
-      <h5>Phone</h5>
-      <div class="footer-item"><a>123-456-7890</a></div>
-    </div>
-
-    <div class="footer-col footer-center">
-      <h5>Email</h5>
-      <div class="footer-item"><a href="mailto:info@mysite.com">info@mysite.com</a></div>
-    </div>
-
-    <div class="footer-col footer-follow">
-      <h5>Follow Me</h5>
-      <div class="footer-item socials">
-        <a class="social" href="https://www.instagram.com/yipee404_/" aria-label="Instagram">in</a>
-        <a class="social" href="https://x.com/mrvjmstrr12" aria-label="Twitter">𝕏</a>
-      </div>
-    </div>
-
-    <div class="footer-col footer-copyright-col">
-      <div class="footer-copyright">
-        <div>© 2025 By Marvi James Torero</div>
-        <div class="footer-meta">Powered and secured by <a href="#" class="footer-meta-link">Web</a></div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-</body>
-</html>
+@include('components.footer')

@@ -4,9 +4,13 @@ use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
-/*
+
 Route::get('/', function () {
-    return view('marvs');   // your home page
+    return view('authentication.login');  
+});
+
+Route::get('/home', function () {
+    return view('marvs');  
 });
 
 Route::get('/resume', function () {
@@ -20,11 +24,7 @@ Route::get('/projects', function () {
 Route::get('/contact', function () {
     return view('contacts');
 });
-*/
 
-Route::get('/', function () {
-    return view('authentication.login');
-});
 
 Route::get('register', [AuthController::class, 'showRegister'])->name('register.form');
 Route::post('register', [AuthController::class, 'register'])->name('register');
